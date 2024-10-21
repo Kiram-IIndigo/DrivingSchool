@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  /* border: 1px solid red; */
+}
+.title {
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.title h1 {
+  margin-left: 10px;
+}
+header {
+  background-color: navy;
+  background: linear-gradient(0.25turn, navy 0%, white 90%);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.title div {
+  margin-left: auto;
+}
+
+.nav-content {
+  display: flex;
+}
+.nav-content h2 {
+  margin-left: 10px;
+  opacity: 0.8;
+}
