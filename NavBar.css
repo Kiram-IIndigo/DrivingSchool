@@ -36,7 +36,7 @@ h2 a {
 }
 .nav-content h2 a:hover {
   background-color: none;
-  color: white;
+  color: lightskyblue;
   transition: 0.3s;
 }
 
