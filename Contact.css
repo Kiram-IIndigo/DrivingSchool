@@ -1,0 +1,70 @@
+.contact_us {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: lightskyblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.contact_us h3 {
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  opacity: 0.8;
+}
+.contact_us p {
+  font-weight: 400;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+  opacity: 0.8;
+  font-size: 20px;
+}
+@media (max-width: 480px) {
+  .contact_us {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  .contact_us h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .contact_us p {
+    font-size: 16px;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .contact_us {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .contact_us h3 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .contact_us p {
+    font-size: 18px;
+    text-align: center;
+    padding-top: 8px;
+  }
+}
+@media (min-width: 1024px) {
+  .contact_us {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .contact_us h3 {
+    font-size: 32px;
+    text-align: left;
+  }
+  .contact_us p {
+    font-size: 20px;
+    text-align: left;
+    padding-top: 0;
+  }
+}/*# sourceMappingURL=Contact.css.map */

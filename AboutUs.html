@@ -32,7 +32,9 @@
           <h2 style="font-size: 25px; color: white">
             <a href="/AboutUs.html" target="_blank">About Us</a>
           </h2>
-          <h2 style="font-size: 25px; color: white">Contact</h2>
+          <h2 style="font-size: 25px; color: white">
+            <a href="/Contact.html" target="_blank">Contact</a>
+          </h2>
         </div>
       </div>
     </header>
@@ -46,7 +48,61 @@
           url('Slike/slika.jpg');
       "
     >
-      <h2>Let Us Introduce Ourselves!</h2>
+      <h2>
+        Let Us Introduce Ourselves!
+
+        <button
+          id="button"
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          More info!
+        </button>
+      </h2>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">
+                More About Us
+              </h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              A driving school teaches people how to drive, offering both
+              classroom lessons on traffic laws and hands-on driving practice
+              with experienced instructors. The goal is to help students pass
+              their driving tests and become safe, confident drivers.
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <section class="cards">
       <div class="card1" style="width: 18rem">
@@ -88,7 +144,14 @@
         </div>
         <div class="pages">
           <h4>Pages</h4>
-          <p>Home <br />About Us <br />Contact</p>
+          <p>
+            <a href="/DrivingSchool.html" target="_blank">Home</a><br /><a
+              href="/AboutUs.html"
+              target="_blank"
+              >About Us</a
+            >
+            <br /><a href="/Contact.html" target="_blank">Contact</a>
+          </p>
         </div>
         <div class="contact">
           <h4>Contact</h4>

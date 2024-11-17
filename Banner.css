@@ -6,6 +6,7 @@
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 10px;
 }
 .banner h2 {
   text-align: center;
@@ -44,6 +45,11 @@
   font-weight: bold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
+.aside-cont {
+  display: flex;
+  justify-content: end;
+  align-items: baseline;
+}
 
 @media screen and (max-width: 1135px) {
   .banner h2 {
@@ -58,5 +64,89 @@
 @media screen and (max-width: 815px) {
   .banner h2 {
     font-size: 30px;
+  }
+}
+@media screen and (max-width: 815px) {
+  .banner p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 469px) {
+  .banner p {
+    font-size: 10px;
+  }
+}
+
+.table-container {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: lightskyblue;
+  border-radius: 10px;
+}
+
+.dark-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.dark-table thead {
+  background-color: #333;
+}
+
+.dark-table th {
+  padding: 12px;
+  color: #fff;
+  text-align: left;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.dark-table tbody tr {
+  background-color: #222;
+  border-bottom: 1px solid #444;
+}
+
+.dark-table tbody tr:hover {
+  background-color: #444;
+}
+
+.dark-table td {
+  padding: 12px;
+  color: #ccc;
+  font-size: 16px;
+}
+
+.dark-table tfoot {
+  background-color: #333;
+}
+
+.dark-table tfoot td {
+  text-align: right;
+  padding: 12px;
+  color: #fff;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .dark-table th,
+  .dark-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .table-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }

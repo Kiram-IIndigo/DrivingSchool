@@ -29,6 +29,101 @@ p {
 footer hr {
   color: white;
 }
-/* * {
-  border: 1px solid red;
-} */
+
+.pages a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.9;
+}
+.pages a:hover {
+  background-color: none;
+  color: lightskyblue;
+  transition: 0.3s;
+}
+@media (max-width: 480px) {
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  footer .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  .location,
+  .pages,
+  .contact {
+    font-size: 14px;
+    opacity: 1;
+    text-align: left;
+  }
+
+  .pages a {
+    font-size: 14px;
+  }
+
+  footer hr {
+    margin-top: 20px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: auto;
+    padding: 20px;
+  }
+
+  footer .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .location,
+  .pages,
+  .contact {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .pages a {
+    font-size: 16px;
+  }
+
+  footer hr {
+    margin-top: 20px;
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    height: 30vh;
+    padding: 20px 0;
+  }
+
+  footer .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .location,
+  .pages,
+  .contact {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .pages a {
+    font-size: 18px;
+  }
+
+  footer hr {
+    width: 100%;
+    margin-top: 20px;
+  }
+}

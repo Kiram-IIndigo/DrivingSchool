@@ -25,6 +25,7 @@ header {
 
 .nav-content {
   display: flex;
+  flex-wrap: wrap;
 }
 .nav-content h2,
 h2 a {
@@ -58,8 +59,60 @@ h2 a {
   transition: 0.3s;
 }
 
-@media screen and (max-width: 815px) {
-  .title a {
-    font-size: 30px;
+@media (max-width: 480px) {
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title h1 {
+    font-size: 18px;
+    margin-left: 0;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .nav-content h2,
+  .nav-content h2 a {
+    margin-left: 0;
+    font-size: 14px;
+    padding: 5px 0;
+  }
+
+  .registration a {
+    font-size: 14px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title h1 {
+    font-size: 20px;
+    margin-left: 0;
+  }
+
+  .nav-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-content h2,
+  .nav-content h2 a {
+    margin-left: 0;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+
+  .registration a {
+    font-size: 16px;
   }
 }
